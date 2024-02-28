@@ -129,7 +129,7 @@ void clear_zeros(LongNumber &a)
     std::reverse(a.fraction_part.begin(),a.fraction_part.end());
     if (a.fraction_part.size() != 0)
     {
-        while (a.fraction_part[i] == 0)
+        while (i >= 0 && a.fraction_part[i] == 0)
         {
             a.fraction_part.pop_back();
             a.accuracy--;

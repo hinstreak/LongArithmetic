@@ -15,5 +15,5 @@ target_link_libraries(pi LongNumbers)
 add_executable(test tests.cpp)
 target_link_libraries(test LongNumbers)
 
-add_custom_target(e20i COMMAND pi)
+add_custom_target(runpi COMMAND pi)
 add_custom_target(runtest COMMAND test)
